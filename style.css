@@ -4,22 +4,37 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 body {
     font-family: Arial, sans-serif;
+    color: black;
+    -webkit-text-stroke-width: 0.05px;
+    -webkit-text-stroke-color: white;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    height: 100%;
+    width: 100%;
     background-image: url('cosmosbg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 70%;
 }
 
 .container {
-    max-height: 100%;
+    height: 100%;
     text-align: center;
+}
 
+h1 {
+    margin-top: 0;
+    padding-top: 10px;
 }
 
 .content {
@@ -33,6 +48,6 @@ body {
 }
 
 .image {
-    max-width: 30%;
+    max-width: 35%;
     height: auto;
 }
